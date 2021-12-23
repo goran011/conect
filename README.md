@@ -1,2 +1,0 @@
-# conect
-sajt za ucenje
