@@ -1,0 +1,217 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+ 
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('img/neon.gif');
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url('img/source.gif');
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url('img/Steaming_Eagle-1.jpg');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color: #282e34;
+    opacity: 0.9;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:rgb(255, 233, 124);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+ 
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+
+ /* Info */
+ .info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.3rem;
+  color: rgb(50, 5, 5);
+  text-align: center;
+}
+.info .h3{
+  font-size: 4rem;
+  margin-bottom: 0;
+  
+}
+
+
+
+
+
+
+
+
+/*video*/
+.video  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    margin-bottom: 40px;
+    border:3px solid rgb(227, 153, 15);
+    
+}
+.video  {
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+
+/*------ Home cards --0--------*/
+.home-cards0{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    grid-gap: 21px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    
+}
+
+.home-cards0 img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards0 h3{
+    margin-bottom: 5px;
+    margin: 9px;
+}
+
+.home-cards0 a {
+    display: inline-block;
+    padding-top: 10px;
+    color:rgb(235, 23, 23) ;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 9px;
+}
+.home-cards0 a:hover i{
+    margin-left:30px;
+}
+.home-cards0 p{
+    color: rgb(12, 1, 12);
+    margin: 9px;
+  text-justify: auto;
+}
+
+
+/*------ Home cards --0--------*/
+/*---------animacija------*/
+.animation-fadeInDown {
+	opacity: 0;
+    -moz-animation: fadeInDown 1s ease-in 0.6s forwards; /* Firefox */
+    -webkit-animation: fadeInDown 1s ease-in 0.6s forwards; /* Safari and Chrome */
+    -o-animation: fadeInDown 1s ease-in 0.6s forwards; /* Opera */
+    animation: fadeInDown 1s ease-in 0.6s forwards;
+	}
+	
+/*.animation-fadeInDown {
+	animation: fadeInDown 2s;
+}*/
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+
+
+
+
+
+  footer {
+    padding: 2.2rem;
+  }
+  
+  footer p {
+   text-align: center;
+    margin: 0;
+  }
+  
+  
+  
+  
+  @media(max-width:900px){
+    .video  {
+        display: grid;
+        grid-template-columns:  1fr;
+    }
+    .home-cards0 {
+        grid-template-columns:  1fr;    
+         
+
+}
+  } 
+
+
+
+  
+  

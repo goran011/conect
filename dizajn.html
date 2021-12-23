@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKALAR369 elektric</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="izlog.css">
+   
+   
+
+    <link rel="stylesheet" href="dimenzion.css">
+
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.5/css/ionicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/ele1.jpg"/>
+</head>
+
+<body>
+
+<!-- -------navigacija ---- -->
+  <!-- -------navigacija ---- -->
+
+  <header class="header">
+    <a href="#" class="header__logo">SKALAR 369</a>
+  
+    <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+  
+    <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+            <a href="" class="nav__perfil">
+                <div class="nav__img">
+                    <img src="img/ele1.jpg" alt="">
+                </div>
+                
+                <div>
+                    <span class="nav__name">SKALAR 369</span>
+                    <span class="nav__name">ELECTRIC</span>
+                </div>
+            </a>
+  
+            <div class="nav__menu">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link active">Naslovna</a></li> 
+  
+                    <li class="nav__item"><a href="elektric.html" class="nav__link ">Elektrik</a></li> 
+  
+                    <li class="nav__item"><a href="zracenje.html" class="nav__link">Zračenja</a></li>
+                     <li class="nav__item"><a href="dizajn.html" class="nav__link">Dizajn</a></li>
+  
+                    <li class="nav__item"><a href="cene.html" class="nav__link">Cene</a></li>
+          
+              <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+          
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+   <!-- --kraj-----navigacija ---- -->
+ 
+<!--===== MAIN JS =====-->
+<script src="main.js"></script>
+
+<!-- -------kraj navigacije----- -->
+ 
+<!-- -------kraj navigacije----- -->
+
+
+
+<div class="wrapper">
+
+
+
+
+
+
+
+<!---------intro text------------>
+<div  class="intro">
+    <div class="intro-inner">
+
+
+        <div class="text">
+            <!---<div class="animation-pulse"><h2> <span><em>Blog </em></span></h2></div>--> 
+             
+            <div class="animation-fadeInDown"><h2>
+              <br>
+              <br>
+              <br>
+                video & web dizajn</h2>
+             
+          </div>
+             
+             
+             <h1 id="text">... </h1>
+              <p></p>
+              <!---<a href="#" class="btn">vidi jos</a>------>
+          </div>
+      
+          <script>
+              const text = document.getElementById('text');
+              const prog = 'Poštovani predlažemo Vam da pogledate kreativne   radove  ';
+              let idx = 1;
+              setInterval(writeText, 369);
+      
+              function writeText() {
+                  text.innerText = prog.slice(0, idx);
+                  idx++
+      
+                  if(idx > prog.length) {
+                      idx = 1;
+                  }
+              }
+           </script>
+
+
+
+
+
+
+
+
+</div>
+</div>
+<!-----end---------intro text------------->
+
+
+
+<!------ Info -----Section---- -->
+
+<section class="info">
+    <!-- -------3 dimezional----- -->
+    <section class="sliderA">
+
+        <div class="containerA">
+
+            <script>
+                var i = 0;  //start point
+                var images = []
+                var time = 3000;
+
+                //image list
+                images[0] = 'image1.jpg';
+                images[1] = 'image2.jpg';
+                images[2] = 'image3.jpg';
+                images[3] = 'image4.jpg';
+                images[4] = 'image5.jpg';
+                images[5] = 'image6.jpg';
+
+                // change Image
+                function changeImg() {
+                    document.slide.src = images[i];
+                    if (i < images.length - 1) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout("changeImg()", time);
+                }
+                window.onload = changeImg;
+            </script>
+
+            <img name="slide" width="450" height="270">
+        </div>
+
+    </section>
+   
+    <!---------kraj   -------3 dimezional----- -->
+
+
+
+    <div>
+        <br>
+        <br>
+      <h2>Vaš posao na  Web u</h2>
+      <br>
+
+      <p>Poznato je več zadnjih desetak godina ,da je web prisustvo firmi i pojedinaca Ultimativno za vašu firmu ili vas samih <>
+        <br>
+pojeftinjenje same reklame prezentacije..umanjuje troškove štampanja,reklama,oglašsvanje na radiu i Tv u.
+
+    </p>
+        <br>
+
+
+        <p>Smanjenje troškova prostora i plačanja tzv window display, tj izloga</p>
+
+            <br>
+
+            <p>Web sajt Vaše firme je ultimativno za sam razvoj,
+                ovde na Webu Vas vide milion,a izlog vide oni koji prođu vašom ulicom gde je izlog firme
+            </p>
+
+        <br>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+ <!-- ------Info ------Section ------>
+
+
+<!---------intro text------------>
+
+
+<!---------intro text------------>
+
+
+
+   <!-- Top Container -->
+   <section class="top-container">
+    <header class="showcase">
+      <h1>Video prezentacija</h1>
+      <p>
+        prikazujemo vam deo video radova i video dizajna ,
+        sve zainteresovane za vido produkciju i dizajn ,pozivamo da se obrate na donje kontakte
+        video produkcija našeg video i audio dizajnera čarobnjaka R.V . studenta Bečke škole i odnedavno rezidenta južnog dela Jadranske obale
+        Zamislite neku ideju i pustite da je Naš kolega sprovede u delo uz pomoč digitalne umetnosti
+        UŽVAJTE...
+     
+        
+        </p>
+
+
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/K78aYG37sZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+<p>Video prezentacija!</p>
+
+<!---------intro text------------>
+
+<!-----end---------intro text------------->
+ <br>
+
+      
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/RdqPggH8UwI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </header>
+
+   <!-------kraj slika  ------ Top Container ----->
+
+  <!-------sporedne slikice  ------ Top Container ----->
+
+
+    <div class="top-box top-box-a">
+      <h4></h4>
+      <p class="price">Video prezentacija!</p>
+      <p>
+        prikazujemo vam deo video radova i video dizajna ,
+        
+        Zamislite neku ideju i pustite da je Naš kolega sprovede u delo uz pomoč digitalne umetnosti
+        UŽVAJTE...
+    
+    
+        Poštovani predlažemo Vam da pogledate kreativne  video radove
+ </p>
+    
+      <iframe width="100%" height="220" src="https://www.youtube.com/embed/7y3uKoHBEvk" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    </div>
+
+
+
+
+    <div class="top-box top-box-b">
+      <h4></h4>
+      <p class="price">Video prezentacija!</p>
+
+      <iframe width="100%" height="220" src="https://www.youtube.com/embed/xVOMkIc3veI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>
+           
+        
+            Poštovani predlažemo Vam da pogledate kreativne  video radove
+  </p>
+     
+    </div>
+<!-----kraj--sporedne slikice  ------ Top Container ----->
+
+  </section>
+
+  <!------ KRAJ TOP container---- -->
+ <!-- Info Section -->
+
+
+
+
+
+  <!-- Boxes Section -->
+
+  
+<!-------kraj--------- Boxes Section -------->
+
+
+
+
+
+
+  <!------ Info -----Section---- -->
+
+  <section class="info">
+    <!-- -------3 dimezional----- -->
+
+    <div class="card">
+        <div class="card__content">
+
+            <div class="card__front">
+                <h3 class="card__title">skalar 369</h3>
+                <p class="card__subtitle">Vreme je za DIZAJN</p>
+            </div>
+
+            <div class="card__back">
+                <p class="card__body">VAŠE mesto na WEB u.
+                    <br>
+                  Da VAS vide milioni..  
+                     </p>
+            </div>
+
+        </div>
+    </div>
+    <!---------kraj   -------3 dimezional----- -->
+
+
+
+    <div>
+        <br>
+        <br>
+        <br>
+
+      <h2>Vaš  Business na  Web u</h2>
+      <br>
+
+      <p>
+          Dzajn ,video i web je današnji ultimatum za sve ozbiljne preduzetnike.
+          <br>
+          <br>
+
+      </p>
+        <br>
+
+
+        <p>Izrada svih Video i Web prezentacija
+            <br>
+            <br>
+            <br>
+        </p>
+
+            <br>
+
+            <p>
+                web prezentacije od 39e.
+                <br>
+                pozovite
+            </p>
+
+        <br>
+      <a href="#" class="btn"> <span class="fas fa-phone-alt"></span> + 381 65  535 9006</a>
+    </div>
+  </section>
+ <!-- ------Info ------Section ------>
+
+
+ <!-- Top Container -->
+ <section class="top-container">
+   
+<header class="showcase">
+    <h1>Video prezentacija</h1>
+    <p>
+     
+      
+      </p>
+    
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/XLehmDWfD8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+
+   
+
+
+
+    
+   
+
+
+  </header>
+
+   <!-------kraj slika  ------ Top Container ----->
+
+  <!-------sporedne slikice  ------ Top Container ----->
+
+
+    <div class="top-box top-box-a">
+      <h4></h4>
+      <p class="price">Video prezentacija!</p>
+     
+ 
+ <iframe width="100%" height="220" src="https://www.youtube.com/embed/mAD7Wl37XXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+
+
+
+    <div class="top-box top-box-b">
+      <h4></h4>
+      <p class="price">Video prezentacija!</p>
+
+
+      <iframe width="100%" height="220" src="https://www.youtube.com/embed/lqdwUdomD3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+      
+<p>
+           
+        
+            Poštovani predlažemo Vam da pogledate kreativne  video radove
+  </p>
+     
+    </div>
+<!-----kraj--sporedne slikice  ------ Top Container ----->
+
+
+
+ <!-------kraj slika  ------ Top Container ----->
+
+
+
+
+
+  </section>
+
+  <!------ KRAJ TOP container---- -->
+
+
+
+
+
+<!--    ----- Home cards 2 ----------->
+
+<section class="home-cards2">
+    <div>
+
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/e0bcPmkPUAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+      
+    
+    </div>
+    <div>
+
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/dIDpC7JWlZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        
+    </div>
+    <div>
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/vZvg3S3000M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    </div>
+    <div>
+        <iframe width="100%" height="220" src="https://www.youtube.com/embed/zquPieRhkQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+       
+    </div>
+    
+    </section>
+    
+
+
+<!--footer-->
+
+<footer>
+    <div class="main-content1">
+        <div class="left box1">
+            <h2> O NAMA <i class="fas fa-jedi"></i> </h2>
+        
+            <div class="content1">
+                <p>MI smo grupa entuzijasta raznih tehničkih i obrazovanih  profila. Naša pasija je sve iz  oblasti  elektrotehnike , web i video dizajna ,kao i novi-stari domeni zaštite od raznih vrsta zračenje</p>
+                
+                <div class="social">
+                    <!---->
+                    <!-- <a href="#"><span class="fab fa-facebook-f"><span</a> < -->
+                    <a href="#"><span class="fab fa-vk">
+                            <span></a>
+                                <a href="#"><span class="fab fa-instagram">
+                                        <span> </a>
+                                            <a href="#"><span class="fab fa-youtube">
+                                                    <span> </a>
+                                                        <a href="#"><span class="fab fa-linkedin">
+                                                                <span> </a>
+                                                                    <a href="#"><span class="fab fa-telegram">
+                                                                            <span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="center box1">
+            <h2> ADRESA <i class="fas fa-home"></i> </h2>
+            <div class="content1">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text1">Beograd, Srbija</span>
+                </div>
+
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text1">+ 381 65  535 9006</span>
+                </div>
+                <div class="place">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text1">skalar369@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right box1">
+            <h2> KONTAKT <i class="far fa-address-card"></i></h2>
+            <div class="content1">
+                <form action="#"></form>
+                <div class="email"></div>
+                <div class="text1">Email *</div>
+                <input type="email" required>
+            </div>
+            <div class="msg">
+                <div class="text1">Message *<i class="fas fa-sun"></i></div>
+                <textarea rows="3" id="" cols="30" required></textarea>
+            </div>
+            <div class="btn1">
+                <button type="submit">send</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+
+
+
+
+        <footer1>
+            <div id="map-block">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.8005028748807!2d20.407455815085072!3d44.84599598250092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65ae4fa6ffbb%3A0xdd2893fe70251313!2z0KLRgNCzINCR0YDQsNC90LrQsCDQoNCw0LTQuNGH0LXQstC40ZvQsA!5e0!3m2!1ssr!2ssk!4v1460219813424"
+                    width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <span class="credit"> Created by <a herf="#">Goran <i class="fas fa-sun"></i> | </span>
+            <span class="far fa-copyright"></span>
+            <span>2021 All rights reseved</span></a>
+        </footer1>
+
+    </div>
+</footer1>
+<!-------end footer--------------->
+
+
+<footer class="center bg-dark">
+    <p>"SKALAR 369" Media &copy; 7530</p>
+  </footer>
+ 
+
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

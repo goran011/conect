@@ -1,0 +1,196 @@
+/*-----------blog-----*/
+section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: 11px; 
+    font-weight: 693;
+    margin: 9px auto;
+    border:3px solid rgb(132, 125, 113);
+  
+}
+
+section1 .imgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+section1 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section1 .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(225deg,#1c1513,#021513fa) ;
+    z-index: 1;
+    mix-blend-mode:screen ;
+} 
+/*------drugi deo bloga---*/  
+section1 .contentBx{ 
+    display: absolute;
+    color: rgb(185, 218, 19);
+    top: 0;
+    left: 0;
+    width: 69%;
+    height: 100%
+   
+    
+}
+section1 .contentBx {
+    width: 50%;
+    padding: 39px;
+    background-color:rgb(189, 181, 181) ;
+}
+
+/*---------------------blog--kraj----------*/
+.bottom{
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #7e7474;
+    bottom:36px;
+    align-items: center;
+    position: bottom sticky ;
+   
+}
+.bottom .footer1{
+padding: 6px;
+font-size: 0.963rem;
+color: #ebdfdf;
+
+}
+.bottom .footer1 span{
+color: #da4a40;
+}
+.bottom  .footer1 a{
+color: #d3abab;
+text-decoration: none;
+text-align :center ;
+
+}
+.bottom .footer1 a1:hover{
+text-decoration: underline;
+
+}
+
+.text h2{
+    font-size: 3rem;
+}
+/*---------animacija------*/
+.animation-fadeInDown {
+	opacity: 0;
+    -moz-animation: fadeInDown 1s ease-in 0.6s forwards; /* Firefox */
+    -webkit-animation: fadeInDown 1s ease-in 0.6s forwards; /* Safari and Chrome */
+    -o-animation: fadeInDown 1s ease-in 0.6s forwards; /* Opera */
+    animation: fadeInDown 1s ease-in 0.6s forwards;
+	}
+	
+/*.animation-fadeInDown {
+	animation: fadeInDown 2s;
+}*/
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+
+
+
+/*------media*/
+@media(max-width:900px){
+  
+ 
+     /*------------------------------blog--------*/
+section1 .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section1 .contentBx{
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 963;
+    padding:39px;
+    background-color:transparent;
+}
+section1 .contentBx .formBx
+{   width: 100% ;
+    padding: 60%;
+    background:  rgb(255 255 255  /0.9 );
+    margin: 50px;
+   
+
+}
+
+section1 .contentBx .formBx h2{
+    color:#5b4a05 ;
+ 
+    text-align: center;
+    margin: 60px  30px;
+
+}
+
+.footer{
+    position: relative;
+    bottom: 0px;
+    }
+    
+        
+    .main-content1{
+        
+        flex-wrap:wrap ;
+        flex-direction: column;
+    }
+    .main-content1 .box1{
+        margin: 5px 0;
+    
+    }
+    
+}      
+/*----end blog------*/        
+
+/*------ hero-------*/
+  .heroB{
+      
+    width:100% ;
+    height:100vh;
+    background:
+    url("img/komp.jpg") center, no-repeat;
+    background-size: cover;
+    border:3px solid rgb(132, 125, 113);
+  }
+  .heroB .text{
+
+ font-size: ;
+      text-align: center;
+      color:white;
+      top: 60rem;
+
+  }
+
+  .heroB .text .h1{
+      margin:  0 0 0;
+  }

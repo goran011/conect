@@ -1,0 +1,140 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('img/dizajn.gif');
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url('img/source.gif');
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url('img/Steaming_Eagle-1.jpg');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color: #282e34;
+    opacity: 0.9;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:rgb(225, 217, 217);
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    
+    color:#fff;
+   
+    
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+
+
+/*---------animacija------*/
+.animation-fadeInDown {
+	opacity: 0;
+    -moz-animation: fadeInDown 1s ease-in 0.6s forwards; /* Firefox */
+    -webkit-animation: fadeInDown 1s ease-in 0.6s forwards; /* Safari and Chrome */
+    -o-animation: fadeInDown 1s ease-in 0.6s forwards; /* Opera */
+    animation: fadeInDown 1s ease-in 0.6s forwards;
+	}
+	
+/*.animation-fadeInDown {
+	animation: fadeInDown 2s;
+}*/
+
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+
+
+
+
+
+
+
+/*video*/
+.video  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    margin-bottom: 40px;
+    border:3px solid rgb(227, 153, 15);
+    
+}
+.video  {
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+  footer {
+    padding: 2.2rem;
+  }
+  
+  footer p {
+   text-align: center;
+    margin: 0;
+  }
+  
+  
+  
+  
+  @media(max-width:900px){.video  {
+    display: grid;
+    grid-template-columns:  1fr;
+}
+}

@@ -1,0 +1,186 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SKALAR369 elektric</title>
+     
+     <link rel="stylesheet" href="style.css">
+     
+     
+     <link rel="stylesheet" href="blog.css">
+
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+         crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+         crossorigin="anonymous" />
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.5/css/ionicons.min.css" rel="stylesheet">
+     <link rel="shortcut icon" href="img/ele1.jpg"/>
+ </head>
+ 
+ <body>
+
+ <!-- -------navigacija ---- -->
+  <!-- -------navigacija ---- -->
+
+  <header class="header">
+    <a href="#" class="header__logo">SKALAR 369</a>
+  
+    <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+  
+    <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+            <a href="" class="nav__perfil">
+                <div class="nav__img">
+                    <img src="img/ele1.jpg" alt="">
+                </div>
+                
+                <div>
+                    <span class="nav__name">SKALAR 369</span>
+                    <span class="nav__name">ELECTRIC</span>
+                </div>
+            </a>
+  
+            <div class="nav__menu">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="index.html" class="nav__link active">Naslovna</a></li> 
+  
+                    <li class="nav__item"><a href="elektric.html" class="nav__link ">Elektrik</a></li> 
+  
+                    <li class="nav__item"><a href="zracenje.html" class="nav__link">Zračenja</a></li>
+                     <li class="nav__item"><a href="dizajn.html" class="nav__link">Dizajn</a></li>
+  
+                    <li class="nav__item"><a href="cene.html" class="nav__link">Cene</a></li>
+          
+              <li class="nav__item"><a href="blog.html" class="nav__link">Blog</a></li>
+          
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+   <!-- --kraj-----navigacija ---- -->
+ 
+<!--===== MAIN JS =====-->
+<script src="main.js"></script>
+
+<!-- -------kraj navigacije----- -->
+ 
+
+  <!-- -------kraj navigacije----- -->
+   <!--hero-->
+    
+   <section class="heroB">
+    <div class="text">
+      <!---<div class="animation-pulse"><h2> <span><em>Blog </em></span></h2></div>--> 
+       
+      <div class="animation-fadeInDown"><h2>
+        <br>
+        <br>
+        <br>
+          Blog</h2>
+       
+    </div>
+       
+       
+       <h1 id="text">start... </h1>
+        <p></p>
+        <!---<a href="#" class="btn">vidi jos</a>------>
+    </div>
+
+    <script>
+        const text = document.getElementById('text');
+        const prog = 'budimo u kontaktu,blogujte sa nama';
+        let idx = 1;
+        setInterval(writeText, 369);
+
+        function writeText() {
+            text.innerText = prog.slice(0, idx);
+            idx++
+
+            if(idx > prog.length) {
+                idx = 1;
+            }
+        }
+     </script>
+
+  </section>
+<!---   --     --  --- - -- --split section---   --- -- ---   ------>
+<!--footer-->
+
+<footer>
+
+
+
+<div class="bottom">
+    <footer1 >
+      
+        <span class="credit">by <a herf= "#">Goran <i class ="fas fa-sun"></i> | </span>
+ <span class="far fa-copyright"></span>
+ <span>7529</span></a>  
+ <li><i class="fas fa-hand-point-right "></i> <a href="https://goran011.github.io/conect">sajt O Nama</a></li>
+    </footer1 >
+
+</div>
+</footer>
+<!--    kraj    footer-->
+
+
+
+<!--Blog-->
+<section1 >
+<div class="imgBx">
+    <img src="img/heksa.jpg">
+
+</div>
+
+
+<div class="contentBx">
+   <!--disqus -->
+   <div class="wrapper">
+
+    <div class="forma-naslov">
+        <h2>BLOG-DISKUSIJA </h2>
+        <p>VAŠI KOMENTARI </p>
+        </div> 
+     
+        <div id="disqus_thread">
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() {  // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//www-mintweb-rs.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div> 
+</div>
+</div>
+</section1>
+
+
+<script src="./app.js"></script>
+
+</body>
+</html>

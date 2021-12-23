@@ -1,0 +1,118 @@
+/*-------------------3d flip-----------*/
+.sectionF{
+    display: flex;
+    position:flex;
+   margin: 3px auto;
+   justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+       
+    background-color:rgb(204, 204, 204);
+  
+  }
+   
+  
+  .flip{
+    position: relative; 
+    height: 450px; 
+    width: auto;
+  
+    margin: 36px 20px 20px;
+  
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%)
+  
+   
+  }
+  
+  .flip.card{
+   
+    position: absolute;
+    top:39px;
+    left:50px;
+    transform: translate(-50%,-50%);
+  
+  }
+  
+  .card{
+    cursor: pointer;
+    width: 19rem;
+    height: 29rem ;
+    
+  }
+  
+  .front,.back{
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform  .9s linear;
+  }
+  
+  .front img{
+    width: 19rem;
+    height: 29rem ;
+  
+  
+   
+  }
+  
+  .front{
+  
+    transform: perspective(600px) rotateY(0deg);
+   }
+  
+  
+  .back{
+  background: #ebe54d;
+  transform: perspective(600px) rotateY(180deg);
+  
+  }
+  .back-content{ 
+    justify-content: space-between;
+    margin-top: 169px;
+   text-align: center;
+    background-size: cover;
+    color: #856b6b;
+    text-align: center;
+    width: 100%;
+  }
+  .sm{
+    margin: 63px 0;
+  }
+  .sm a{
+    display:inline-flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #115da9;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card a:hover{
+    background:#2c3e50;
+    color: white;
+  }
+  .card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);   
+  }
+  .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);   
+   }
+  h4{
+  font-size: 0.9rem;
+  font-weight: 693;
+  text-transform: uppercase;
+  color: #0a2402;
+  text-justify: auto;
+  }
+  
+  
+  /*------------end-----3d fllip----------*/
